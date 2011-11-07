@@ -46,7 +46,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('charset')->end()
+                ->scalarNode('charset')->defaultValue('UTF-8')->end()
                 ->scalarNode('trust_proxy_headers')->defaultFalse()->end()
                 ->scalarNode('secret')->isRequired()->end()
                 ->scalarNode('ide')->defaultNull()->end()

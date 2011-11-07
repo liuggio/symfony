@@ -579,7 +579,6 @@ abstract class Kernel implements KernelInterface
                 'kernel.cache_dir'       => $this->getCacheDir(),
                 'kernel.logs_dir'        => $this->getLogDir(),
                 'kernel.bundles'         => $bundles,
-                'kernel.charset'         => 'UTF-8',
                 'kernel.container_class' => $this->getContainerClass(),
             ),
             $this->getEnvParameters()
